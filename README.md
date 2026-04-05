@@ -1,16 +1,16 @@
 # 🏥 MedRoute Pro — Medical Report Intelligence System
 
-MedRoute Pro is an AI-powered clinical decision support prototype designed to assist hospitals in automatically classifying medical reports into appropriate specialties.
+MedRoute Pro is a clinical decision support prototype that uses Natural Language Processing (NLP) to classify medical reports and automatically assign patients to appropriate hospital specialties.
 
 ---
 
 ## 🚀 Features
 
-- 🧠 NLP-based medical report classification
-- 📊 Confidence scoring with visualization
+- 🧠 AI-based medical report classification
+- 📊 Confidence scoring visualization
 - 🏥 Automatic department assignment
 - 👨‍⚕️ Patient management dashboard
-- ⚡ FastAPI backend + clean frontend UI
+- ⚡ FastAPI backend with real-time predictions
 
 ---
 
@@ -26,16 +26,12 @@ MedRoute Pro is an AI-powered clinical decision support prototype designed to as
 
 medroute-pro/
 │
-├── backend/
-│ ├── app.py
-│ ├── final_pipeline.joblib
-│
-├── frontend/
-│ └── index.html
-│
+├── backend/ → API + ML model
+├── frontend/ → UI interface
 ├── requirements.txt
 ├── README.md
-├── .gitignore
+
+---
 
 ## ▶️ How to Run
 
@@ -50,3 +46,28 @@ pip install -r requirements.txt
 
 uvicorn backend.app:app --reload
 ```
+
+Open:
+http://127.0.0.1:8000
+
+---
+
+## 🧪 Demo Flow
+
+1. Enter patient details
+2. Paste medical transcription
+3. Click "Classify"
+4. View predicted specialty and confidence
+5. Patient appears in dashboard
+
+---
+
+## ⚠️ Disclaimer
+
+This project is for academic demonstration purposes only and not intended for real clinical use.
+
+---
+
+## 👨‍💻 Author
+
+Pranav Goyal
